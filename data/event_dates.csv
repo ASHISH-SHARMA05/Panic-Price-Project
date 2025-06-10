@@ -1,0 +1,6 @@
+outbreak,event_date,event_name,event_type
+SARS,2003-02-01,First WHO alert,Outbreak Start
+H1N1,2009-04-26,WHO Pandemic Declaration,Pandemic Alert
+Ebola,2014-09-30,First US Case,Public Panic
+Zika,2016-02-01,WHO Emergency Declared,Travel Alert
+COVID-19,2020-03-11,WHO Pandemic Declaration,Market Crash Trigger

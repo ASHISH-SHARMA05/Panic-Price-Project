@@ -1,0 +1,6 @@
+outbreak,start_date,end_date,region,virus_type
+SARS,2003-02-01,2003-07-31,"Asia, Canada, US",Coronavirus
+H1N1,2009-04-01,2010-08-31,Global,Influenza
+Ebola,2014-03-01,2016-06-09,"Africa, US",Viral Hemorrhagic
+Zika,2016-01-01,2017-11-30,Americas,Mosquito-borne
+COVID-19,2020-01-01,2022-12-31,Global,Coronavirus
