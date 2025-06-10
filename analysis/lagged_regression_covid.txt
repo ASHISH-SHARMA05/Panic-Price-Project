@@ -1,0 +1,27 @@
+📊 Regression: Does Last Month's COVID Search Predict Returns?
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             Avg_Return   R-squared:                       0.009
+Model:                            OLS   Adj. R-squared:                  0.005
+Method:                 Least Squares   F-statistic:                     2.033
+Date:                Sun, 08 Jun 2025   Prob (F-statistic):              0.155
+Time:                        16:43:52   Log-Likelihood:                 42.915
+No. Observations:                 227   AIC:                            -81.83
+Df Residuals:                     225   BIC:                            -74.98
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+const            0.0257      0.014      1.798      0.073      -0.002       0.054
+Lagged_COVID     0.0010      0.001      1.426      0.155      -0.000       0.002
+==============================================================================
+Omnibus:                       18.754   Durbin-Watson:                   2.008
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               22.584
+Skew:                          -0.617   Prob(JB):                     1.25e-05
+Kurtosis:                       3.929   Cond. No.                         22.2
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
