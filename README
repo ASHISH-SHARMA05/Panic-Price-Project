@@ -1,1 +1,93 @@
+PANIC: Public Attention, News, and Investment Correlation
+Ashish Sharma
+Student, University of Texas at Austin
+B.Sc. Economics
+
+Overview
+This project explores the impact of epidemic outbreaks on public sentiment and financial market behavior. Using Google Trends data as a proxy for public panic and S&P 500 index data for market behavior, the analysis identifies relationships between search interest spikes during outbreaks and changes in market returns and volatility.
+
+Objectives
+1.	Analyze the magnitude of public interest during major outbreaks (e.g., COVID-19, H1N1, Ebola, Zika).
+2.	Compare S&P 500 returns during outbreak vs. non-outbreak months.
+3.	Investigate correlations between search interest and market metrics.
+4.	Examine potential predictive effects of lagged search trends on market performance.
+
+Data Sources
+•	Google Trends: Monthly U.S. search interest scores for outbreak-related keywords (e.g., “Ebola,” “COVID-19,” “quarantine”).
+•	S&P 500 Data: Monthly average returns and volatility derived from daily returns (via Yahoo Finance).
+
+Assumptions
+•	Search interest on Google Trends is a reasonable proxy for public panic or attention.
+•	Market returns reflect aggregated investor sentiment and are reactive to macro events like pandemics.
+•	Monthly frequency captures broad trends without excessive noise.
+•	Outbreak months are defined based on WHO declaration periods and public awareness surges.
+
+Key Analyses and Findings
+1. Average Public Interest by Outbreak
+ 
+COVID-19 clearly dominates public attention, with an average Google Trends score >7. Other outbreaks like Swine Flu, Zika, and Ebola all register far lower public concern.
+
+2. Return Distribution During Outbreaks vs. Normal Months
+ 
+Market return distributions show a wider range and more extreme negative returns during outbreak periods. Median returns during outbreaks are slightly higher but come with heavier tails.
+
+3. Correlation Matrix
+ 
+•	High positive correlations between COVID-19, terms like “quarantine” and “mask,” and outbreak periods.
+•	Moderate negative correlation between outbreak presence and average S&P returns (-0.40).
+•	Volatility is positively correlated with outbreak periods (0.26).
+
+4. Lagged COVID-19 Trend vs. Avg Return
+ 
+No strong predictive trend emerges, but variance in returns increases with higher lagged panic levels. Suggests rising uncertainty.
+
+5. Timeline: Trends vs. S&P 500 Returns
+ 
+Clear spikes in search volume coincide with significant dips or volatility surges in the S&P 500 index. The COVID-19 phase stands out for its prolonged impact.
+
+6. Outbreak Comparison: Average Returns
+ 
+COVID-19 and H1N1 both saw positive average returns during their outbreak periods, possibly due to rebound effects after initial panic.
+
+7. Market Behavior With Outbreak Overlay
+ 
+Red zones indicate outbreak periods. S&P 500 returns exhibit greater volatility and larger drawdowns within these windows.
+
+8. SARS Case Study
+ 
+Mixed returns during the SARS phase, showing a sharp drop followed by strong recovery. Public awareness was limited compared to modern outbreaks.
+
+9. Average Return Barplot: Outbreak vs. No Outbreak
+ 
+S&P 500 had higher average returns in outbreak periods (likely due to rebounds), though confidence intervals overlap.
+10. Market Volatility Comparison
+ 
+Volatility increases notably during outbreak months, confirming heightened uncertainty and fluctuating investor reactions.
+
+Statistical Test Results
+ Lagged Regression: Does Last Month’s COVID Search Predict Returns?
+•	R-squared: 0.009 → Extremely weak explanatory power
+•	P-value: 0.155 → Not statistically significant
+•	Conclusion: No strong evidence that last month’s COVID-related search interest predicts this month’s market returns.
+T-Test: S&P 500 Returns During Outbreak vs. Normal Months
+•	T-Statistic: 0.8009
+•	P-Value: 0.4242
+•	Conclusion: No statistically significant difference in returns across outbreak and normal months.
+T-Test: Volatility During Outbreak vs. Normal Months
+•	T-Statistic: 0.3800
+•	P-Value: 0.7043
+•	Conclusion: No statistically significant difference in volatility, despite visual trends suggesting otherwise.
+
+Critical Assessment
+While the visualizations suggest that outbreak periods exhibit heightened volatility and public panic, the statistical tests reveal no significant differences in market returns or volatility between outbreak and normal periods. This implies that the perceived panic may not translate to measurable market shifts, or that the sample size and monthly granularity mask short-term shocks.
+The regression analysis also shows that lagged search interest does not significantly predict market returns, challenging the hypothesis that panic can be a leading indicator for investor behavior. This outcome is useful as it reminds us that correlation doesn’t imply causation.
+COVID-19’s disproportionate presence in the dataset might have skewed correlations and patterns.
+
+Conclusions
+•	Public panic (measured via search interest) tends to rise sharply during global outbreaks.
+•	Market behavior becomes more volatile during these periods, with mixed effects on returns depending on timing and response.
+•	COVID-19 remains a unique outlier, both in terms of public attention and market impact.
+•	While some outbreaks may cause initial market drawdowns, recovery patterns differ significantly.
+
+
 
